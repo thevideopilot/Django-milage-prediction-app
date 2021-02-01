@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPG Prediction Web App</title>
+</head>
+<body>
+    {{a}}
+   <h2>Check mileage of your Car Instantly</h2>
+
+   <h3>Please enter details</h3>
+
+   <form action="predictMPG" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div>
+        <label for="">Cylinders:</label>
+        <input name="cylinderVal" type="text" value="1">
+    </div>
+    <br><br>
+    <div>
+        <label for="">Displacement:</label>
+        <input name="displaceVal" type="text" value="1">
+    </div>
+    <br>
+    <div>
+        <label for="">Horsepower:</label>
+        <input name="horsepwVal" type="text" value="1">
+    </div>
+    <br><br>
+    <div>
+        <label for="">Weight:</label>
+        <input name="weightVal" type="text" value="1">
+    </div>
+    <br><br>
+    <div>
+        <label for="">Acceleration:</label>
+        <input name="accVal" type="text" value="1">
+    </div>
+    <br><br>
+    <div>
+        <label for="">Model:</label>
+        <input name="modelVal" type="text" value="1">
+    </div>
+    <br><br>
+    <div>
+        <label for="">Origin:</label>
+        <input name="orginVal" type="text" value="1">
+    </div>
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
